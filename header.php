@@ -16,7 +16,13 @@
                     <?php bloginfo('name'); ?>
                 </a>
             </h1>
-            <p><?php bloginfo('description'); ?></p>
+            <p><?php bloginfo('description'); ?>
+                <?php if (is_page('my-projects')) { ?>
+                    - thank you for viewing my projects
+                <?php } ?>
+            </p>
+
+
 
             <nav class="site-nav">
                 <?php
