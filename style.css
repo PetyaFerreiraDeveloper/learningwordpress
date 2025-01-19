@@ -42,6 +42,26 @@ article.post:last-of-type {
   border-bottom: none;
 }
 
+article.post.page {
+  background-color: red;
+}
+
+article.post.frontpage {
+  background-color: green;
+}
+article.projects .text-column p {
+  background-color: purple;
+  margin: 0;
+}
+article.post.projects {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+}
+
 .site-nav ul {
   list-style: none;
   margin: 0;
@@ -77,6 +97,6 @@ header .site-nav ul li.current-menu-item a {
 }
 
 // Page Layout
-artcile .page h2 {
+article .page h2 {
   font-size: 2em;
 }

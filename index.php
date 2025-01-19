@@ -3,7 +3,7 @@
 get_header();
 if (have_posts()):
     while (have_posts()): the_post(); ?>
-        <article class="post">
+        <article class="post frontpage">
             <h2>
                 <a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?>
