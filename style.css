@@ -70,8 +70,13 @@ header .site-nav ul li.current-menu-item a {
 }
 
 .site-footer nav ul li a {
-    display: block;
-    padding-inline: 10px;
-    padding-block: 8px;
-    border-right: 1px dotted #999;
+  display: block;
+  padding-inline: 10px;
+  padding-block: 8px;
+  border-right: 1px dotted #999;
+}
+
+// Page Layout
+artcile .page h2 {
+  font-size: 2em;
 }
