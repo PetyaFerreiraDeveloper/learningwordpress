@@ -56,7 +56,7 @@ article.projects .text-column p {
 article.post.projects {
   background-color: blue;
   display: grid;
-  grid-template-columns: 1fr 2fr ;
+  grid-template-columns: 1fr 2fr;
   align-items: start;
   gap: 20px;
   padding: 20px;
@@ -99,4 +99,15 @@ header .site-nav ul li.current-menu-item a {
 // Page Layout
 article .page h2 {
   font-size: 2em;
+}
+
+div.info-box {
+  padding: 20px;
+}
+
+section.special-page {
+  background-color: orange;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
 }
