@@ -43,18 +43,18 @@ article.post:last-of-type {
 }
 
 article.post.page {
-  background-color: red;
+  background-color: rgb(219, 130, 102);
 }
 
 article.post.frontpage {
-  background-color: green;
+  background-color: rgb(156, 217, 115);
 }
 article.projects .text-column p {
-  background-color: purple;
+  background-color: rgb(110, 80, 101);
   margin: 0;
 }
 article.post.projects {
-  background-color: blue;
+  background-color: rgb(159, 125, 230);
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: start;
@@ -84,7 +84,8 @@ header .site-nav ul li a:hover {
   color: white;
 }
 
-header .site-nav ul li.current-menu-item a {
+header .site-nav ul li.current-menu-item a,
+header .site-nav ul li.current-page-ancestor a {
   background-color: #006ec3;
   color: white;
 }
@@ -96,7 +97,7 @@ header .site-nav ul li.current-menu-item a {
   border-right: 1px dotted #999;
 }
 
-// Page Layout
+/* Page Layout  */
 article .page h2 {
   font-size: 2em;
 }
@@ -110,4 +111,39 @@ section.special-page {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 20px;
+}
+
+/* Children links  */
+.children-pages-links {
+  display: flex;
+  gap: 20px;
+}
+
+.children-pages-links .parent-link {
+  border-right: 1px solid #999;
+}
+
+.children-pages-links .parent-link a {
+  display: block;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.children-pages-links .children-links a {
+  display: block;
+  padding: 10px;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.children-pages-links .children-links a:hover {
+  background-color:rgb(215, 195, 167);
+  color: black;
+}
+
+.children-pages-links .current_page_item a {
+  color: white;
 }
