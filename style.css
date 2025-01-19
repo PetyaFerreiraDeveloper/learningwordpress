@@ -4,3 +4,40 @@ Author: Petya Naydenova Ferreira
 Author URI: http://www.petyaferreira.com
 Version: 1.0
 */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 224, 224);
+}
+
+a:link,
+a:visited {
+  color: #006ec3;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  border-bottom: 2px solid #999;
+}
+
+.site-footer {
+  border-top: 2px solid #999;
+  margin-top: 20px;
+}
+
+article.post {
+  border-bottom: 1px dotted #bbbbbb;
+}
+
+article.post:last-of-type {
+  border-bottom: none;
+}
