@@ -41,3 +41,37 @@ article.post {
 article.post:last-of-type {
   border-bottom: none;
 }
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+header .site-nav ul li a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #999;
+  padding: 10px;
+  border-bottom: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header .site-nav ul li a:hover {
+  background-color: #999;
+  color: white;
+}
+
+header .site-nav ul li.current-menu-item a {
+  background-color: #006ec3;
+  color: white;
+}
+
+.site-footer nav ul li a {
+    display: block;
+    padding-inline: 10px;
+    padding-block: 8px;
+    border-right: 1px dotted #999;
+}
