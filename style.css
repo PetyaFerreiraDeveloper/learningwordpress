@@ -147,3 +147,18 @@ section.special-page {
 .children-pages-links .current_page_item a {
   color: white;
 }
+
+/* Post styles */
+.post h2 {
+  margin-bottom: 0;
+}
+
+.post .post-info {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 0;
+}
+
+.post .post-info a {
+  color: #666;
+}
