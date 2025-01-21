@@ -11,7 +11,7 @@ if (have_posts()):
                 </a>
             </h2>
 
-            <p class="post-info"><?php the_time('jS F, Y'); ?> | by <a href="<?php get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> | Posted in
+            <p class="post-info"><?php the_time('jS F, Y'); ?> | by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> | Posted in
                 <?php
                 $categories = get_the_category();
                 $separator = ", ";
