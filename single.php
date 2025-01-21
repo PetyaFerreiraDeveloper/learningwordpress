@@ -25,7 +25,7 @@ if (have_posts()):
                 }
                 ?>
             </p>
-            <p><?php the_excerpt(); ?></p>
+            <p><?php the_content(); ?></p>
         </article>
     <?php endwhile;
 else:
