@@ -29,6 +29,12 @@ a:visited {
   border-bottom: 2px solid #999;
 }
 
+.site-header .title-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site-footer {
   border-top: 2px solid #999;
   margin-top: 20px;
@@ -175,4 +181,22 @@ section.special-page {
 img {
   max-width: 100%;
   height: auto;
+}
+.header-search .search-fields {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-search #s {
+  border: 1px solid #006ec3;
+  padding: 10px;
+}
+
+.header-search #searchsubmit {
+  background-color: #006ec3;
+  color: white;
+  border: 1px solid #006ec3;
+  padding: 10px;
+  cursor: pointer;
 }
