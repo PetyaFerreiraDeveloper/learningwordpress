@@ -1,3 +1,5 @@
+<!-- This is the page that shows the archive of the posts. It will show the posts based on the category, tag, author, date, etc. -->
+
 <?php
 
 get_header();

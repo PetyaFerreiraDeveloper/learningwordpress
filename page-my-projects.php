@@ -1,3 +1,5 @@
+<!-- This is a special file that is responsible only for the my projects page -->
+
 <?php
 get_header();
 

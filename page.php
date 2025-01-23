@@ -1,3 +1,5 @@
+<!-- This is every normal page in wordpress -->
+
 <?php
 get_header();
 

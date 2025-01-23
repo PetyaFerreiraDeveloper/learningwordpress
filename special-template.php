@@ -1,3 +1,5 @@
+<!-- This is special template for special pages - in wordpress UI you can select this template for specific page. -->
+
 <?php
 /*
 Template Name: Special Layout
