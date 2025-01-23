@@ -27,6 +27,8 @@ if (have_posts()):
                 ?>
             </p>
 
+            <?php the_post_thumbnail(); ?>
+
             <?php
             if ($post->post_excerpt) { ?>
                 <p>

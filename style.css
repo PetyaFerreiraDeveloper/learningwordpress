@@ -162,3 +162,9 @@ section.special-page {
 .post .post-info a {
   color: #666;
 }
+
+/* Style images */
+img {
+  max-width: 100%;
+  height: auto;
+}
