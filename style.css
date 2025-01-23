@@ -200,3 +200,7 @@ img {
   padding: 10px;
   cursor: pointer;
 }
+
+.search-page-title .search-term {
+  color: orange;
+}
