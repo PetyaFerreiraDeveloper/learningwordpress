@@ -3,7 +3,7 @@
 get_header();
 if (have_posts()):
     while (have_posts()): the_post(); ?>
-        <article class="post frontpage">
+        <article class="post single">
             <h2>
                 <a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?>
@@ -24,6 +24,7 @@ if (have_posts()):
                 }
                 ?>
             </p>
+            <?php the_post_thumbnail('banner-image'); ?>
             <p><?php the_content(); ?></p>
         </article>
     <?php endwhile;

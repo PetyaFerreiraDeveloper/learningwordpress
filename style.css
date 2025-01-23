@@ -49,10 +49,18 @@ article.post.page {
 article.post.frontpage {
   background-color: rgb(156, 217, 115);
 }
+
+article.post.frontpage.has-thumbnail {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+}
+
 article.projects .text-column p {
   background-color: rgb(110, 80, 101);
   margin: 0;
 }
+
 article.post.projects {
   background-color: rgb(159, 125, 230);
   display: grid;
@@ -140,7 +148,7 @@ section.special-page {
 }
 
 .children-pages-links .children-links a:hover {
-  background-color:rgb(215, 195, 167);
+  background-color: rgb(215, 195, 167);
   color: black;
 }
 
