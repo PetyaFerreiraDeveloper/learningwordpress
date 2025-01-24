@@ -1,7 +1,10 @@
-<article class="post frontpage <?php if (has_post_thumbnail()) { ?> has-thumbnail <? }; ?>">
-  <div class="post-thumbnail">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
-  </div>
+<article class="post <?php if (!is_single()) { ?> frontpage <? }; ?> <?php if (has_post_thumbnail()) { ?> has-thumbnail <? }; ?>">
+  <?php if (!is_single()) { ?>
+    <div class="post-thumbnail">
+      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+    </div>
+  <?php } ?>
+
   <div class="post-content">
     <h2>
       <a href="<?php the_permalink(); ?>">
@@ -28,6 +31,9 @@
         <?php echo get_the_excerpt(); ?>
         <a href="<?php the_permalink(); ?>">Read more &raquo;</a>
       </p>
+    <?php } elseif (is_single()) {
+      the_post_thumbnail('banner-image'); ?>
+      <p><?php the_content(); ?></p>
       <?php } else {
 
       if ($post->post_excerpt) { ?>
