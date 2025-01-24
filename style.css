@@ -261,3 +261,10 @@ img {
 .search-page-title .search-term {
   color: orange;
 }
+
+/* Style main posts page to contain two columns  */
+.posts-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}

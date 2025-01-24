@@ -55,3 +55,16 @@ function learningWordPress_setup()
 }
 
 add_action('after_setup_theme', 'learningWordPress_setup');
+
+
+// Add Widget Locations
+
+function ourWidgetsInit()
+{
+    register_sidebar(array(
+        'name' => 'Sidebar',
+        'id' => 'sidebar1',
+    ));
+}
+
+add_action('widgets_init', 'ourWidgetsInit');

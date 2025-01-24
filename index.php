@@ -2,16 +2,20 @@
 
 <?php
 
-get_header();
-if (have_posts()):
-    while (have_posts()): the_post();
-        get_template_part('content', get_post_format());
-    endwhile;
-else:
-?>
-    <p>Sorry, no posts found.</p>
-<?php
-endif;
+get_header(); ?>
+<section class="posts-section">
+    <div class="main-column">
+        <?php if (have_posts()) {
+            while (have_posts()): the_post();
+                get_template_part('content', get_post_format());
+            endwhile;
+        } else { ?>
+            <p>Sorry, no posts found.</p>
+        <?php } ?>
+    </div>
+    <div class="secondary-column">
+        <?php dynamic_sidebar('sidebar1'); ?>
+    </div>
+</section>
 
-
-get_footer();
+<?php get_footer();
