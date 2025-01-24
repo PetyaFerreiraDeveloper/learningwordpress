@@ -13,9 +13,7 @@ get_header(); ?>
             <p>Sorry, no posts found.</p>
         <?php } ?>
     </div>
-    <div class="secondary-column">
-        <?php dynamic_sidebar('sidebar1'); ?>
-    </div>
+    <?php get_sidebar(); ?>
 </section>
 
 <?php get_footer();

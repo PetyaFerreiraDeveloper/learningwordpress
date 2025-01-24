@@ -64,6 +64,8 @@ function ourWidgetsInit()
     register_sidebar(array(
         'name' => 'Sidebar',
         'id' => 'sidebar1',
+        'before_widget' => '<section class="widget">',
+        'after_widget' => '</section>',
     ));
 
     register_sidebar(array(
