@@ -275,3 +275,11 @@ img {
   grid-template-columns: 3fr 1fr;
   gap: 30px;
 }
+
+/* Style gallery page */
+
+.gallery-page .content-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
