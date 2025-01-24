@@ -40,6 +40,13 @@ a:visited {
   margin-top: 20px;
 }
 
+.site-footer .footer-widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: aqua;
+}
+
 article.post {
   border-bottom: 1px dotted #bbbbbb;
   margin-block: 10px;

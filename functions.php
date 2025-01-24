@@ -65,6 +65,23 @@ function ourWidgetsInit()
         'name' => 'Sidebar',
         'id' => 'sidebar1',
     ));
+
+    register_sidebar(array(
+        'name' => 'Footer Area 1',
+        'id' => 'footer1',
+    ));
+    register_sidebar(array(
+        'name' => 'Footer Area 2',
+        'id' => 'footer2',
+    ));
+    register_sidebar(array(
+        'name' => 'Footer Area 3',
+        'id' => 'footer3',
+    ));
+    register_sidebar(array(
+        'name' => 'Footer Area 4',
+        'id' => 'footer4',
+    ));
 }
 
 add_action('widgets_init', 'ourWidgetsInit');
