@@ -98,3 +98,78 @@ function ourWidgetsInit()
 }
 
 add_action('widgets_init', 'ourWidgetsInit');
+
+// Customize Appearance Options
+function learningWordPress_customize_register($wp_customize)
+{
+    $wp_customize->add_setting('lwp_link_color', array(
+        'default' => '#006ec3',
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_setting('lwp_button_color', array(
+        'default' => '#006ec3',
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_setting('lwp_button_hover_color', array(
+        'default' => '#005b9f',
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_section('lwp_standard_colors', array(
+        'title' => __('Standard Colors', 'LearningWordPress'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'lwp_link_color_control', array(
+        'label' => __('Link Color', 'LearningWordPress'),
+        'section' => 'lwp_standard_colors',
+        'settings' => 'lwp_link_color',
+    )));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'lwp_button_color_control', array(
+        'label' => __('Button Color', 'LearningWordPress'),
+        'section' => 'lwp_standard_colors',
+        'settings' => 'lwp_button_color',
+    )));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'lwp_button_hover_color_control', array(
+        'label' => __('Button Hover Color', 'LearningWordPress'),
+        'section' => 'lwp_standard_colors',
+        'settings' => 'lwp_button_hover_color',
+    )));
+}
+
+add_action('customize_register', 'learningWordPress_customize_register');
+
+// Output Customize CSS
+function learningWordPress_customize_css()
+{ ?>
+    <style type="text/css">
+        a:link,
+        a:visited {
+            color: <?php echo get_theme_mod('lwp_link_color'); ?>;
+        }
+
+        header .site-nav ul li.current-menu-item a,
+        header .site-nav ul li.current-page-ancestor a {
+            background-color: <?php echo get_theme_mod('lwp_link_color'); ?>;
+        }
+
+        .header-search #searchsubmit,
+        .wp-block-search__button.wp-element-button {
+            background-color: <?php echo get_theme_mod('lwp_button_color'); ?>;
+            color: white;
+        }
+
+        .header-search #searchsubmit:hover,
+        .wp-block-search__button.wp-element-button:hover {
+            background-color: <?php echo get_theme_mod('lwp_button_hover_color'); ?>;
+            color: white;
+        }
+    </style>
+
+<?php }
+
+add_action('wp_head', 'learningWordPress_customize_css');

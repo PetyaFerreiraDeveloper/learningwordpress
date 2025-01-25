@@ -302,9 +302,7 @@ img {
 }
 
 .front-page-columns h4 a {
-  display: block;
-  padding-block: 10px;
-  color: rgb(132, 81, 10);
+  text-decoration: none;
 }
 
 .front-page-column {
